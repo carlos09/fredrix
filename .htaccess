@@ -10,4 +10,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /fredrix/index.php [L]
 </IfModule>
 
+# STRONG HTACCESS PROTECTION</code>
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
 # END WordPress
